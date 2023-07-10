@@ -1,0 +1,122 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.myapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->O:\myapp\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->O:\myapp\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->O:\myapp\android\app\src\main\AndroidManifest.xml:3:5-67
+11-->O:\myapp\android\app\src\main\AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->O:\myapp\android\app\src\main\AndroidManifest.xml:4:4-78
+12-->O:\myapp\android\app\src\main\AndroidManifest.xml:4:21-75
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->O:\myapp\android\app\src\main\AndroidManifest.xml:5:5-81
+13-->O:\myapp\android\app\src\main\AndroidManifest.xml:5:22-78
+14
+15    <application
+15-->O:\myapp\android\app\src\main\AndroidManifest.xml:6:5-25:19
+16        android:name="com.myapp.MainApplication"
+16-->O:\myapp\android\app\src\main\AndroidManifest.xml:7:7-38
+17        android:allowBackup="false"
+17-->O:\myapp\android\app\src\main\AndroidManifest.xml:11:7-34
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.7.0] C:\Users\durge\.gradle\caches\transforms-3\57e3facbf92c5e79086c2c8ef717f3ef\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+19        android:icon="@mipmap/ic_launcher"
+19-->O:\myapp\android\app\src\main\AndroidManifest.xml:9:7-41
+20        android:label="@string/app_name"
+20-->O:\myapp\android\app\src\main\AndroidManifest.xml:8:7-39
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->O:\myapp\android\app\src\main\AndroidManifest.xml:10:7-52
+22        android:theme="@style/AppTheme" >
+22-->O:\myapp\android\app\src\main\AndroidManifest.xml:12:7-38
+23        <activity
+23-->O:\myapp\android\app\src\main\AndroidManifest.xml:13:7-24:18
+24            android:name="com.myapp.MainActivity"
+24-->O:\myapp\android\app\src\main\AndroidManifest.xml:14:9-37
+25            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+25-->O:\myapp\android\app\src\main\AndroidManifest.xml:16:9-118
+26            android:exported="true"
+26-->O:\myapp\android\app\src\main\AndroidManifest.xml:19:9-32
+27            android:label="@string/app_name"
+27-->O:\myapp\android\app\src\main\AndroidManifest.xml:15:9-41
+28            android:launchMode="singleTask"
+28-->O:\myapp\android\app\src\main\AndroidManifest.xml:17:9-40
+29            android:windowSoftInputMode="adjustResize" >
+29-->O:\myapp\android\app\src\main\AndroidManifest.xml:18:9-51
+30            <intent-filter>
+30-->O:\myapp\android\app\src\main\AndroidManifest.xml:20:9-23:25
+31                <action android:name="android.intent.action.MAIN" />
+31-->O:\myapp\android\app\src\main\AndroidManifest.xml:21:13-65
+31-->O:\myapp\android\app\src\main\AndroidManifest.xml:21:21-62
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->O:\myapp\android\app\src\main\AndroidManifest.xml:22:13-73
+33-->O:\myapp\android\app\src\main\AndroidManifest.xml:22:23-70
+34            </intent-filter>
+35        </activity>
+36
+37        <provider
+37-->[:react-native-image-picker] O:\myapp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
+38            android:name="com.imagepicker.ImagePickerProvider"
+38-->[:react-native-image-picker] O:\myapp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-63
+39            android:authorities="com.myapp.imagepickerprovider"
+39-->[:react-native-image-picker] O:\myapp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-71
+40            android:exported="false"
+40-->[:react-native-image-picker] O:\myapp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+41            android:grantUriPermissions="true" >
+41-->[:react-native-image-picker] O:\myapp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
+42            <meta-data
+42-->[:react-native-image-picker] O:\myapp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-17:70
+43                android:name="android.support.FILE_PROVIDER_PATHS"
+43-->[:react-native-image-picker] O:\myapp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-67
+44                android:resource="@xml/imagepicker_provider_paths" />
+44-->[:react-native-image-picker] O:\myapp\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-67
+45        </provider>
+46
+47        <activity
+47-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\durge\.gradle\caches\transforms-3\2d759e1b14870793e52adcbe04559763\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+48            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+48-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\durge\.gradle\caches\transforms-3\2d759e1b14870793e52adcbe04559763\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+49            android:exported="false"
+49-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\durge\.gradle\caches\transforms-3\2d759e1b14870793e52adcbe04559763\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+50            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+50-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\durge\.gradle\caches\transforms-3\2d759e1b14870793e52adcbe04559763\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+51
+52        <meta-data
+52-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\durge\.gradle\caches\transforms-3\7ddcf632c18f030fc41c9115c0fc77c3\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+53            android:name="com.google.android.gms.version"
+53-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\durge\.gradle\caches\transforms-3\7ddcf632c18f030fc41c9115c0fc77c3\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+54            android:value="@integer/google_play_services_version" />
+54-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\durge\.gradle\caches\transforms-3\7ddcf632c18f030fc41c9115c0fc77c3\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+55
+56        <provider
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\durge\.gradle\caches\transforms-3\6d2005a533fa4046737a8c8e298cc408\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+57            android:name="androidx.startup.InitializationProvider"
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\durge\.gradle\caches\transforms-3\6d2005a533fa4046737a8c8e298cc408\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+58            android:authorities="com.myapp.androidx-startup"
+58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\durge\.gradle\caches\transforms-3\6d2005a533fa4046737a8c8e298cc408\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+59            android:exported="false" >
+59-->[androidx.emoji2:emoji2:1.0.0] C:\Users\durge\.gradle\caches\transforms-3\6d2005a533fa4046737a8c8e298cc408\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+60            <meta-data
+60-->[androidx.emoji2:emoji2:1.0.0] C:\Users\durge\.gradle\caches\transforms-3\6d2005a533fa4046737a8c8e298cc408\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+61                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+61-->[androidx.emoji2:emoji2:1.0.0] C:\Users\durge\.gradle\caches\transforms-3\6d2005a533fa4046737a8c8e298cc408\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+62                android:value="androidx.startup" />
+62-->[androidx.emoji2:emoji2:1.0.0] C:\Users\durge\.gradle\caches\transforms-3\6d2005a533fa4046737a8c8e298cc408\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+63            <meta-data
+63-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\durge\.gradle\caches\transforms-3\97b4285a8d91dd4dd6262c7e69c3843f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+64                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+64-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\durge\.gradle\caches\transforms-3\97b4285a8d91dd4dd6262c7e69c3843f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+65                android:value="androidx.startup" />
+65-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\durge\.gradle\caches\transforms-3\97b4285a8d91dd4dd6262c7e69c3843f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+66        </provider>
+67    </application>
+68
+69</manifest>
